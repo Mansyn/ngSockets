@@ -1,0 +1,46 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <img src="assets/images/puma-2-1.png" width="600px" alt="I'm a dachsund">
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Message</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="message in $ctrl.awesomeMessages">
+            <th scope="row">{{message.id}}</th>
+            <td>{{message.name}}</td>
+            <td>{{message.message}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <form>
+    <h3>Add new message</h3>
+    <div class="form-group">
+      <label>Number</label>
+      <input type="number" class="form-control" ng-model="$ctrl.newNumber">
+    </div>
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" ng-model="$ctrl.newName">
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <input type="text" class="form-control" ng-model="$ctrl.newMessage">
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="$ctrl.addMessage()">Submit</button>
+  </form>
+
+</div>
