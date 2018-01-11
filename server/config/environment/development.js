@@ -7,7 +7,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://mean-db:jxVtb3R5PcmfXIYQ0ANXSXM25D9PI7C2MGFVlmZIluz9uw9reHXFOkbpyl4bXm0FGg6pd6OTk8DIo8EMoFBONQ==@mean-db.documents.azure.com:10255/?ssl=true&replicaSet=globaldb'
+    uri: 'mongodb://pigo:biggio@ds151207.mlab.com:51207/socket-db'
   },
 
   // Seed database on startup
